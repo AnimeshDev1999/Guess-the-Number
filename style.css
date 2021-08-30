@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #8ec5fc;
+}
+#again {
+  background-color: cornflowerblue;
+  border: none;
+  width: 200px;
+  height: 80px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#range {
+  background-color: cornflowerblue;
+  height: 30px;
+  width: 230px;
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+}
+#main-sec {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 30px;
+  width: 650px;
+  border-radius: 20px;
+}
+#main-sec h1 {
+  background-color: cornflowerblue;
+  width: 650px;
+  height: 90px;
+  text-align: center;
+  border-radius: 20px;
+}
+#sub-sec {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 60px;
+  width: 200px;
+  border-radius: 50%;
+}
+#sub-sec h1 {
+  background-color: cornflowerblue;
+  width: 200px;
+  height: 200px;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 50px;
+}
+#last-sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: 250px;
+}
+#user-input {
+  width: 200px;
+  height: 100px;
+  justify-self: center;
+  background-color: cornflowerblue;
+  border: none;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  border-radius: 20px;
+  pointer-events: none;
+}
+#hint {
+  background-color: cornflowerblue;
+  justify-self: center;
+  align-self: center;
+  height: 40px;
+  width: 350px;
+  text-align: center;
+  border-radius: 5px;
+}
+#check {
+  height: 50px;
+  width: 100px;
+  justify-self: center;
+  align-self: center;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  pointer-events: none;
+}
+#score {
+  background-color: cornflowerblue;
+  justify-self: center;
+  align-self: start;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: -1;
+}
+#high {
+  background-color: cornflowerblue;
+  justify-self: center;
+  align-self: center;
+  height: 40px;
+  width: 250px;
+  text-align: center;
+  border-radius: 5px;
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: -1;
+}
+.box-shd {
+  box-shadow: 10px 10px 30px rgba(39, 39, 39, 0.404),
+    -10px -10px 30px rgba(39, 39, 39, 0.404),
+    10px -10px 30px rgba(39, 39, 39, 0.404),
+    -10px 10px 30px rgba(39, 39, 39, 0.404);
+}
+#row {
+  background-color: cornflowerblue;
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  color: rgb(9, 160, 9);
+}
+#again:active {
+  background-color: rgb(9, 160, 9);
+}
+#check:active {
+  background-color: rgb(9, 160, 9);
+}
+#user-score {
+  background-color: cornflowerblue;
+  border: none;
+  width: 150px;
+  height: 80px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+  text-align: center;
+}
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(68, 68, 68, 0.548);
+}
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+#popup {
+  width: 25rem;
+  height: 30rem;
+  background-color: rgba(255, 255, 255, 0.897);
+  border: 3px solid #444;
+  overflow: scroll;
+}
+.hidden {
+  display: none;
+}
+#btn {
+  position: absolute;
+  right: 1.5rem;
+  top: 5rem;
+  background-color: cornflowerblue;
+  height: 30px;
+  width: 230px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+#close {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 2rem;
+}
+#popup h1 {
+  position: relative;
+  padding-top: 3rem;
+  padding-left: 1rem;
+}
+#popup h2 {
+  padding-top: 3rem;
+  padding-left: 1rem;
+}
+#popup ul {
+  padding-top: 3rem;
+  padding-left: 1rem;
+}
