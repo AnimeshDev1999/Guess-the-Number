@@ -17,13 +17,13 @@ const terminate = document.querySelector("#close");
 function start(clicked) {
   points = 20;
   comChoice = Number(Math.floor(Math.random() * 20 + 1));
-  document.getElementById("body").style.backgroundColor = "#444";
+  document.getElementById("body").style.backgroundColor = "white";
   document.getElementById("hint").innerHTML = "❔ Start the game to get hints.";
   document.getElementById("user-input").value = "0";
   console.log(comChoice);
   comChoiceMax = comChoice + 3;
   comChoiceMin = comChoice - 3;
-  document.getElementById("user-score").innerHTML = `Score:<br />20`;
+  document.getElementById("user-score").innerHTML = `Score: 20`;
   document.getElementById("reveal").innerHTML = `?`;
   document.getElementById("score").innerHTML = `💯 Score: 0`;
   document.getElementById("user-input").style.pointerEvents = "all";
@@ -37,7 +37,9 @@ function check(clicked) {
       "hint"
     ).innerHTML = `🎉 ${userChoice} is the correct answer!`;
     document.getElementById("reveal").innerHTML = `${userChoice}`;
-    document.getElementById("body").style.backgroundColor = "rgb(9, 160, 9)";
+    document.getElementById("body").style.backgroundColor = "#90EE90";
+    document.getElementById("user-input").style.pointerEvents = "none";
+    document.getElementById("check").style.pointerEvents = "none";
     ans = true;
   } else if (userChoice >= comChoice && userChoice <= comChoiceMax) {
     document.getElementById(
@@ -61,11 +63,11 @@ function check(clicked) {
 
 function calcScore(answer) {
   if (answer) {
-    document.getElementById("user-score").innerHTML = `Score:<br />${points}`;
+    document.getElementById("user-score").innerHTML = `Score: ${points}`;
     document.getElementById("score").innerHTML = `💯 Score: ${points}`;
   } else {
     points--;
-    document.getElementById("user-score").innerHTML = `Score:<br />${points}`;
+    document.getElementById("user-score").innerHTML = `Score: ${points}`;
     document.getElementById("score").innerHTML = `💯 Score: ${points}`;
   }
 }

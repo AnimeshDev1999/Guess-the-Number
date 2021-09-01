@@ -8,32 +8,53 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body id="body">
-    <nav id="navbar">
-      <button id="again" class="box-shd" onclick="start(this)">
-        Start / Reset
-      </button>
-      <p id="user-score" class="box-shd">Score:<br />20</p>
-      <p id="range" class="box-shd">(Between 1 and 20)</p>
-    </nav>
-    <center>
-      <div id="row"></div>
-      <main id="main-sec">
-        <h1 class="box-shd">Guess The Number !</h1>
-      </main>
-      <section id="sub-sec">
-        <h1 id="reveal" class="box-shd">?</h1>
-      </section>
-    </center>
-    <footer id="last-sec">
-      <input type="number" id="user-input" class="box-shd" />
-      <h2 id="hint" class="box-shd">❔ Start the game to get hints.</h2>
-      <button id="check" class="box-shd" onclick="check(this)">Check !</button>
-      <h2 id="score" class="box-shd">💯 Score: 0</h2>
-      <h2 id="high" class="box-shd">🥇 High score: 0</h2>
-    </footer>
-    <button id="btn" class="box-shd">How to play?</button>
-    <div id="overlay" class="center hidden"></div>
-    <div id="popup" class="center hidden">
+    <!-- Main Conatiner -->
+
+    <div id="container-main">
+      <!-- Left Container -->
+
+      <div id="container-left">
+        <div id="sub-sec-first">
+          <h1 class="default-spacing-left">Guess The Number.</h1>
+          <h2 class="default-spacing-left">
+            Try your luck in this awesome game!
+          </h2>
+          <button id="btn" class="default-spacing-left">How to play?</button>
+        </div>
+        <div id="sub-sec-left">
+          <p id="user-score" class="default-spacing-left">Score: 20</p>
+          <p id="score" class="default-spacing-left">💯 Score: 0</p>
+          <p id="high" class="default-spacing-left">🥇 High score: 0</p>
+        </div>
+      </div>
+      <!-- Right Container -->
+
+      <div id="container-right">
+        <nav id="navbar">
+          <button id="again" class="default-spacing-left" onclick="start(this)">
+            Start / Reset
+          </button>
+          <p id="range" class="default-spacing-right">[Between 1 and 20]</p>
+        </nav>
+        <main id="main-sec">
+          <h2 id="hint">❔ Start the game to get hints.</h2>
+          <h1 id="reveal" class="box-shd">?</h1>
+        </main>
+        <footer id="last-sec">
+          <input type="number" id="user-input" class="default-spacing-left" />
+          <button
+            id="check"
+            class="default-spacing-right"
+            onclick="check(this)"
+          >
+            Check !
+          </button>
+        </footer>
+      </div>
+    </div>
+    <!-- Pop-up Menu -->
+    <div id="overlay" class="hidden"></div>
+    <div id="popup" class="hidden">
       <h1>Guess The Number !</h1>
       <h2>How to play:</h2>
       <ul>
