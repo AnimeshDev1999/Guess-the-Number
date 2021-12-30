@@ -1,4 +1,4 @@
-# Guess-the-Number
+# Guess the Number
 A mini game for browser powered by javascript.
 ## About
 The game was made Animesh Kumar on VSCode on Fidora linux distro the game was coded from scratch by me. Feel free to provide your suggestions and features you wish to see in the game.
